@@ -11,6 +11,7 @@ public class Main {
 
     private static void getYear() {
         Scanner in = new Scanner(System.in);
+        System.out.println("Please enter month:");
         int month = in.nextInt();
         if (month > 0 && month <= 12) {
             Calendar calendar = Calendar.getInstance();
@@ -28,6 +29,8 @@ public class Main {
 
     private static void getMonth() {
         Scanner in = new Scanner(System.in);
+
+        System.out.println("Please enter year:");
         int year = in.nextInt();
 
         if (year >= 1800 && year <= 2016) {
